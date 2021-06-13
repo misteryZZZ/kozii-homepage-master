@@ -1,16 +1,64 @@
 .App {
+  text-align: left;
+}
+
+.container {
+  padding: 0;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 50px;
+  left: 16px;
+  padding: 5px;
+  width: 70%;
+}
+
+.effect {
+  overflow: hidden;
+}
+
+.effect img {
+  overflow: hidden;
+  transition: all 1.5s ease;
+}
+
+.effect:hover img {
+  transform: scale(1.5);
+}
+
+body {
+  background-color: #F8F9FA;
+}
+
+a {
+  color: rgb(129, 117, 117) !important;
+}
+
+.guide:hover {
+  /* color: rgb(129, 117, 117) !important; */
+  color: #FD5D31 !important;
+}
+.navbar {
+  background-color: #FD5D31 !important;
+}
+
+.jumbo {
+  background-color: #FD5D31 !important;
+}
+
+
+.newsletter .content {
+  max-width: 500px;
+  margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .App-header {
@@ -25,14 +73,12 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: rgb(129, 117, 117);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 360px) and (max-width: 768px){
+.btmspace {
+  margin-bottom: 20px;
+
+}
 }
